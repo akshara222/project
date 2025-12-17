@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Myntra Clone</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Assistant', sans-serif;
+    }
+    body{ background:#f5f5f5; }
+    header{
+      background:#fff;
+      height:80px;
+      display:flex;
+      align-items:center;
+      padding:0 40px;
+      box-shadow:0 2px 8px rgba(0,0,0,0.1);
+      position:sticky;
+      top:0;
+      z-index:100;
+    }
+    .logo{
+      margin-right:40px;
+    }
+    .logo img{
+      height:36px;
+      cursor:pointer;
+    }
+    nav ul{
+      list-style:none;
+      display:flex;
+      gap:25px;
+      font-weight:700;
+      font-size:14px;
+    }
+    .search-box{
+      margin-left:30px;
+      flex:1;
+    }
+    .search-box input{
+      width:100%;
+      padding:10px 15px;
+      border:1px solid #ddd;
+      background:#f5f5f6;
+      border-radius:4px;
+    }
+    .icons{
+      display:flex;
+      gap:25px;
+      margin-left:30px;
+      font-size:13px;
+      font-weight:600;
+    }
+    .offer{
+      background:#ffde00;
+      color:#d4145a;
+      text-align:center;
+      font-weight:800;
+      font-size:26px;
+      padding:15px;
+    }
+    .banner{
+      width:100%;
+      margin-top:10px;
+    }
+    .banner img{
+      width:100%;
+      display:block;
+    }
+    .brands{
+      background:#fff;
+      margin-top:20px;
+      padding:20px 0;
+      display:flex;
+      justify-content:space-evenly;
+      align-items:center;
+      font-weight:700;
+    }
+    .categories{
+      width:92%;
+      margin:40px auto;
+      display:grid;
+      grid-template-columns:repeat(6, 1fr);
+      gap:20px;
+    }
+    .cat-card{
+      background:linear-gradient(180deg,#e8ecff,#cfd6ff);
+      text-align:center;
+      padding:10px 10px 15px;
+      border-radius:6px;
+      box-shadow:0 2px 6px rgba(0,0,0,0.15);
+    }
+    .cat-card img{
+      width:100%;
+      height:210px;
+      object-fit:cover;
+      border-radius:4px;
+    }
+    .cat-card h3{
+      font-size:14px;
+      margin-top:10px;
+      font-weight:700;
+      color:#000;
+    }
+    .cat-card p{
+      font-size:14px;
+      font-weight:800;
+      color:#000;
+    }
+    footer{
+      background:#222;
+      color:#fff;
+      text-align:center;
+      padding:25px;
+      margin-top:40px;
+      font-size:14px;
+    }
+    .myntra-bottom-footer {
+  position: relative;
+  left: 50%;
+  width: max-content;
+  font-size: 14px;
+  color: #94969f;
+  padding: 12px 0;
+  background: transparent;
+}
+  </style>
+</head>
+<body>
+<header>
+  <div class="logo">
+  <img src="img1.jpg" alt="Myntra Logo">
+</div>
+  <nav>
+    <ul>
+      <li>MEN</li>
+      <li>WOMEN</li>
+      <li>KIDS</li>
+      <li>HOME</li>
+      <li>BEAUTY</li>
+      <li>GENZ</li>
+      <li>STUDIO <span style="color:red;font-size:10px">NEW</span></li>
+    </ul>
+  </nav>
+  <div class="search-box">
+    <input type="text" placeholder="Search for products, brands and more">
+  </div>
+  <div class="icons">
+    <div>Profile</div>
+    <div>Wishlist</div>
+    <div>Bag</div>
+  </div>
+</header>
+<div class="offer">FLAT ₹500 OFF ON YOUR 1st PURCHASE</div>
+<div class="banner">
+  <img src="img2.jpg.png" alt="Myntra Banner">
+</div>
+<footer>
+ 
+<section class="categories">
+  <div class="cat-card">
+    <img src="img3.png" alt="Ethnic Wear">
+    <h3>Ethnic Wear</h3>
+    <p>30–60% OFF</p>
+    <p>Shop Now</p>
+  </div>
+  <div class="cat-card">
+    <img src="img4.png" alt="casual wear">
+    <h3>Casual wear</h3>
+    <p>UP TO 70% OFF</p>
+    <p>Shop Now</p>
+  </div>
+  <div class="cat-card">
+    <img src="img5.png" alt="Men's Activewear">
+    <h3>Men's Activewear</h3>
+    <p>UP TO 70% OFF</p>
+    <p>Shop Now</p>
+  </div>
+  <div class="cat-card">
+    <img src="img6.png" alt="Women's Activewear">
+    <h3>Women's Activewear</h3>
+    <p>UP TO 60% OFF</p>
+    <p>Shop Now</p>
+  </div>
+  <div class="cat-card">
+    <img src="img7.png" alt="Western wear">
+    <h3>Western Wear</h3>
+    <p>UP TO 60% OFF</p>
+    <p>Shop Now</p>
+  </div>
+  <div class="cat-card">
+    <img src="img8.png" alt="Sports Wear">
+    <h3>Sports wear</h3>
+    <p>UP TO 80% OFF</p>
+    <p>Shop Now</p>
+  </div>
+  <div class="cat-card">
+    <img src="img9.png" alt="Loungewear">
+    <h3>Loungewear</h3>
+    <p>60%-70% OFF</p>
+    <p>Shop Now</p>
+  </div>
+  <div class="cat-card">
+    <img src="img10.png" alt="Watches">
+    <h3>Watches</h3>
+    <p>UP TO 50% OFF</p>
+    <p>Shop Now</p>
+  </div>
+  <div class="cat-card">
+    <img src="img11.png" alt="Beauty">
+    <h3>Grooming</h3>
+    <p>50%-60% OFF</p>
+    <p>Shop Now</p>
+  </div>
+  <div class="cat-card">
+    <img src="img12.png" alt="Beauty">
+    <h3>Beauty and Makeup</h3>
+    <p>UP TO 40% OFF</p>
+    <p>Shop Now</p>
+  </div>
+  <div class="cat-card">
+    <img src="img13.png" alt="Beauty">
+    <h3>Kids wear</h3>
+    <p>40-50% OFF</p>
+    <p>Shop Now</p>
+  </div>
+  <div class="cat-card">
+    <img src="img14.png" alt="Beauty">
+    <h3>Men's Fpotwear</h3>
+    <p>UP TO 50% OFF</p>
+    <p>Shop Now</p>
+  </div>
+  <div class="cat-card">
+    <img src="img15.png" alt="Beauty">
+    <h3>Women's Footwear</h3>
+    <p>UP TO 60% OFF</p>
+    <p>Shop Now</p>
+  </div>
+  <div class="cat-card">
+    <img src="img16.png" alt="Beauty">
+    <h3>Bags ,Belts & Wallets</h3>
+    <p>UP TO 70% OFF</p>
+    <p>Shop Now</p>
+  </div>
+  <div class="cat-card">
+    <img src="img17.png" alt="Beauty">
+    <h3>Office wear</h3>
+    <p>60%-70% OFF</p>
+    <p>Shop Now</p>
+  </div>
+  <div class="cat-card">
+    <img src="img18.png" alt="Beauty">
+    <h3>Men's Ethnic Wear</h3>
+    <p>UP TO 50% OFF</p>
+    <p>Shop Now</p>
+  </div>
+  <div class="cat-card">
+    <img src="img19.png" alt="Beauty">
+    <h3>Home Decor</h3>
+    <p>UP TO 40% OFF</p>
+    <p>Shop Now</p>
+  </div>
+  <div class="cat-card">
+    <img src="img20.png" alt="Beauty">
+    <h3>Handbags</h3>
+    <p>UP TO 50% OFF</p>
+    <p>Shop Now</p>
+  </div>
+  <div class="cat-card">
+    <img src="img21.png" alt="Beauty">
+    <h3>Headphones & Speakers</h3>
+    <p>40%-50% OFF</p>
+    <p>Shop Now</p>
+  </div>
+  <div class="cat-card">
+    <img src="img22.png" alt="Beauty">
+    <h3>Jewellery</h3>
+    <p>UP TO 60% OFF</p>
+    <p>Shop Now</p>
+  </div>
+  <div class="cat-card">
+    <img src="img23.png" alt="Beauty">
+    <h3>Size-inclusive Styles</h3>
+    <p>UP TO 60% OFF</p>
+    <p>Shop Now</p>
+  </div>
+  <div class="cat-card">
+    <img src="img24.png" alt="Beauty">
+    <h3>Inclusive Styles</h3>
+    <p>UP TO 70% OFF</p>
+    <p>Shop Now</p>
+  </div>
+  <div class="cat-card">
+    <img src="img25.png" alt="Beauty">
+    <h3>Watches & Wearables</h3>
+    <p>30%-40% OFF</p>
+    <p>Shop Now</p>
+  </div>
+  <div class="cat-card">
+    <img src="img26.png" alt="Beauty">
+    <h3>Sleepwear</h3>
+    <p>UP TO 40% OFF</p>
+    <p>Shop Now</p>
+  </div>
+  <div class="cat-card">
+    <img src="img28.png" alt="Beauty">
+    <h3>Workwear</h3>
+    <p>UP TO 50% OFF</p>
+    <p>Shop Now</p>
+  </div>
+  <div class="cat-card">
+    <img src="img29.png" alt="Beauty">
+    <h3>Eyewear</h3>
+    <p>UP TO 60% OFF</p>
+    <p>Shop Now</p>
+  </div>
+  <div class="cat-card">
+    <img src="img30.png" alt="Beauty">
+    <h3>Workwear</h3>
+    <p>60%-70% OFF</p>
+    <p>Shop Now</p>
+  </div>
+  <div class="cat-card">
+    <img src="img31.png" alt="Beauty">
+    <h3>Casual Style</h3>
+    <p>UP TO 55% OFF</p>
+    <p>Shop Now</p>
+  </div>
+  <div class="cat-card">
+    <img src="img32.png" alt="Beauty">
+    <h3>Bags and Bagpacks</h3>
+    <p>UP TO 45% OFF</p>
+    <p>Shop Now</p>
+  </div>
+  <div class="cat-card">
+    <img src="img33.png" alt="Beauty">
+    <h3>Footwear</h3>
+    <p>50%-60% OFF</p>
+    <p>Shop Now</p>
+  </div>
+  <footer class="myntra-bottom-footer">
+  <p>© 2025 www.myntra.com. All rights reserved.</p>
+</footer>
+</section>
+</body>
+</html>
